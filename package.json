@@ -1,0 +1,23 @@
+{
+  "name": "curi",
+  "version": "1.0.0",
+  "description": "doing ut for fun",
+  "main": "dns.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node curi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "denamed": "^2.0.4",
+    "dns-packet": "^5.6.1",
+    "dotenv": "^16.4.7"
+  }
+}
