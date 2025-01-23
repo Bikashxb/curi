@@ -49,7 +49,8 @@ const handleQuery = async (query) => {
         createTxtAnswer(question, answerText)
     ]);
     }, {
-        port: 53,
-        host: '0.0.0.0'
-    });
-    console.log('DNS server running on port 53');
+      port: 53,
+      host: '0.0.0.0'
+    }).on('listening', () => {
+      console.log('DNS server running on port 53');
+  });
