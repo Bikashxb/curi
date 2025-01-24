@@ -48,17 +48,9 @@ const handleQuery = async (query) => {
     return createResponse(query, [
         createTxtAnswer(question, answerText)
     ]);
-    }, {
-      port: 53,
-      host: '0.0.0.0'
-    }).on('listening', () => {
-      console.log('DNS server running on port 53');
-  });
-
-  const server = startUdpServer(handleQuery, {
+  }, {
     port: 53,
     host: '0.0.0.0'
   });
-  server.on('listening', () => {
-    console.log('DNS server running on port 53');
-  });
+  
+  console.log('DNS server running on port 53');
